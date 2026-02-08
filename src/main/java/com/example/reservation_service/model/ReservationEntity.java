@@ -25,6 +25,7 @@ public class ReservationEntity {
     @Column(name = "end_date")
     private LocalDate endDate;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "status")
     private ReservationStatus status;
 
